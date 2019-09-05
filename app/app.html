@@ -5,29 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Biber app</title>
 </head>
 
 <body>
-  <div id="app" class="app-area">
+  <div class="wrapper">
+    <div id="app" class="app-area">
 
 
-    <div class="controls">
-      <div class="timer"></div>
-      <div class="points"></div>
+      <div class="controls">
+        <div class="timer"></div>
+        <div class="points"></div>
+      </div>
+
+      <div class="holes">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+
+      </div>
+      <div class="buttons">
+        <button type="button" class="startBtn" onclick="createbibers = setInterval(createBiber, 500)">start</button>
+        <button type="button" onclick="clearInterval(createbibers)">stop</button>
+      </div>
     </div>
-
-    <div class="holes">
-
-
-    </div>
-
-    <button type="button" class="startBtn"></button>
-
   </div>
-
-  <script scr="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
