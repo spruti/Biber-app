@@ -10,7 +10,7 @@ body{
 }
 .app-area{
     display: grid;
-    grid-template-rows: 50px 300px 50px;
+    grid-template-rows: 50px auto 50px;
     grid-template-columns: 1fr 1fr;
     background-color: #fff;
     border-radius: 10px;
@@ -32,6 +32,9 @@ body{
     background-color: #ffeaa7;
     position: relative;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: inherit;
+    justify-items: center;
 }
 
 .hole{
@@ -55,7 +58,6 @@ body{
     cursor: pointer;
 }
 .hole img.hidden{  
-    /* animation: hideBiber .2s; */
     top: 50px;
     transition: all .2s ease-in-out;
     visibility: hidden;
@@ -71,12 +73,6 @@ body{
         opacity: 0;
     }
 }
-/* @keyframes hideBiber{
-    to{
-        
-    }
-} */
-
 
 
 .startBtn{
